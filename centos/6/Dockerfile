@@ -5,8 +5,8 @@ RUN set -x \
     && gem install json -v 1.8.3 \
     && gem install fpm -v 1.4.0 \
     && yum clean all \
-    && mkdir /src
+    && mkdir /tmp/src
 
-WORKDIR /src/
+WORKDIR /tmp/src/
 
 CMD /usr/bin/fpm

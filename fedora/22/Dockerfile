@@ -4,8 +4,8 @@ RUN set -x \
     && dnf install -y ruby-devel gcc make rpmdevtools \
     && gem install fpm \
     && dnf clean all \
-    && mkdir /src
+    && mkdir /tmp/src
 
-WORKDIR /src/
+WORKDIR /tmp/src/
 
 CMD /usr/local/bin/fpm

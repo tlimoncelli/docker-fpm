@@ -11,8 +11,8 @@ RUN set -x \
 		ca-certificates \
 		libffi-dev \
 	&& gem install fpm \
-	&& mkdir /src/
+	&& mkdir /tmp/src/
 
-WORKDIR /src/
+WORKDIR /tmp/src/
 
 CMD /usr/local/bin/fpm
